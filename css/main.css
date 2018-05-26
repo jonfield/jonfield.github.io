@@ -1,0 +1,140 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+/* All text */
+h1 {
+    font-style: italic;
+}
+h2 {
+    margin: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+#header-logo {
+    padding-top: 20px;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+.header-text {
+    width: 100%;
+    text-align: center;
+}
+.header-text h3 {
+    font-style: italic;
+    font-weight: 300;
+}
+.header-container {
+    border-bottom: 1px solid #a0a0a0;
+}
+.hero-container {
+    height: 80%;
+    padding: 50px;
+    background: rgb(0,211,218);
+background: linear-gradient(302deg, rgba(0,211,218,1) 0%, rgba(0,156,254,1) 100%);
+    text-align: center;
+    color: #fff;
+}
+.featured-work h2 {
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 400;
+}
+.feature-card {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.feature-card img {
+    width: 85%;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 4px 16px 0px rgba(3,3,3,0.3);
+       -moz-box-shadow: 0 4px 16px 0px rgba(3,3,3,0.3);
+            box-shadow: 0 4px 16px 0px rgba(3,3,3,0.3);
+    transition: transform 1.2s;
+}
+.feature-card img:hover {
+    -webkit-box-shadow: 0 2px 8px 0px rgba(3,3,3,0.3);
+       -moz-box-shadow: 0 2px 8px 0px rgba(3,3,3,0.3);
+            box-shadow: 0 2px 8px 0px rgba(3,3,3,0.3);
+    transform: translate(0, 1px);
+
+}
+.bio {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.my-bio-header h2 {
+    font-size: 2.3em;
+    font-weight: 400;
+}
+#joyce-quote {
+    font-style: italic;
+}
+footer {
+    background-color: #2d3c49;
+    padding: 25px 0 10px 0;
+}
+.footer-container {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.footer-container a {
+    font-size: 2.5em;
+    color: #fff;
+    margin: 20px;
+}
+@media screen and (min-width: 500px) {
+    .header-container {
+        width: 100%;
+        display: flex;
+    }
+    .feature-card img {
+        max-width: 425px;
+    }
+    .bio {
+        width: 450px;
+    }
+}
+@media screen and (min-width: 700px) {
+    .header-text h1 {
+        font-size: 36px;
+    }
+    .header-container {
+        line-height: 1;
+    }
+    .hero-container h2 {
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .featured-work-cards {
+        width: 100%;
+        display: flex;
+    }
+    .bio {
+        width: 70%;
+        margin-bottom: 50px;
+    }
+    .bio-picture {
+        margin-top: 30px;
+        width: 40%;
+    }
+    .bio-copy {
+        width: 60%;
+    }
+    .bio-content {
+        display: flex;
+        flex-direction: row;
+    }
+}
